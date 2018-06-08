@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/responsive.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
         crossorigin="anonymous">
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" sizes="96x96" href="images/blomqvist_.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
 
 </head>
@@ -66,14 +67,14 @@
         <div class="row video-wrapper">
             <video src="images/Particle tests (7) audio visual HD! [720p].mp4" preload="auto" autoplay></video>
             <div class="overlay">
-                <div class="text">
-                    <h1 class="header-text display-5">
-                        Communiction, Information & Design
+                <div  class="text">
+                    <h1 data-aos="flip-up" data-aos-delay="300" class="header-text display-5">
+                        Communiction, Information &amp; Design
                     </h1>
-                    <p class="body-text card-text mt-3">
+                    <p data-aos="flip-down" data-aos-delay="700" class="body-text card-text mt-3">
                         WE CREATE BEAUTIFUL, CONVERSION-BASED WEBSITES AND E-COMMERCE SOLUTIONS TO GROW BRANDS AND ENHANCE CUSTOMER EXPERIENCE.
                     </p>
-                    <button type="button" class="btn btn-outline-light btn-lg"> Work with us</button>
+                    <button data-aos="flip-up" data-aos-delay="800" type="button" class="btn btn-outline-light btn-lg"> Work with us</button>
                 </div>
             </div>
         </div>
@@ -84,24 +85,27 @@
     <section id="about-us">
         <div class="container">
             <div class="row">
-                <div id="div1" class="col-lg-6">
+                <div data-aos="zoom-out-right"  data-aos-anchor-placement="top-center" id="about-us-text" class="col-lg-6">
                     <div class="card-body">
                         <h1 class="header-text card-title font-weight-bold">Wer sind wir
                         </h1>
-                        <p class="card-text comment-text">
+                        <!-- <p class="card-text comment-text">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        </p>
+                        </p> -->
                         <p class="about-us-text card-text mt-5 ">Wir sind geprägt von einen ausgesprochenen Lösungsdrang. Keine leere Versprechungen, keine Werbephrasen
                             – sondern flexible, schnelle und passgenaue Antworten auf drängende Probleme unsere Kunden. Wir
                             sind analog, wir sind digital, wir sind in klassischen Medien genau so zu Hause wie in neuen.
                             Und nicht zuletzt: Wir sind Teamplayer, die grundsätzlich gemeinsam mit unseren Kunden und Partnern
                             nach der besten Lösung suchen. Dabei arbeiten wir direkt für Unternehmen, aber auch zusammen
                             mit Agenturen, die externe Expertise und Unterstützung benötigen.</p>
-                        <button type="button" class="mt-5 btn btn-lg btn-outline-dark">Our Service</button>
+                        <a href="#service">
+
+                            <button type="button" class="mt-5 btn btn-lg btn-outline-dark">Our Service</button>
+                        </a>
                     </div>
                 </div>
-                <div id="div2" class="col-lg-6 ">
-                    <img class="img-fluid " src="images/mirror.jpg" alt="">
+                <div data-aos="zoom-out-left" data-aos-anchor-placement="top-center"  id="about-us-img" class="col-lg-6 ">
+                    <img class="img-fluid " src="images/mirror.jpg" alt="Error: image is not loade">
                 </div>
             </div>
         </div>
@@ -112,7 +116,7 @@
     <section id="our-team" class="pt-5 pb-5">
         <div class="container pt-5 pb-5">
             <div class="row">
-                <div id="test" class=" col-12 card-body text-center animated">
+                <div data-aos="slide-up"   data id="team" class=" col-12 card-body text-center">
                     <h2 class="card-title header-text">Unser Team</h2>
                     <p class="card-text">Bei Blømqvist treffen Sie Menschen, die für Ihre Aufgaben brennen. Die alles tun, um gemeinsam mit Ihnen
                         die besten, nachhaltigsten und tragfähigsten Lösungen zu finden - und die für diese Lösungen auch
@@ -121,9 +125,9 @@
                     </p>
                 </div>
             </div>
-            <div id="team-members" class="row mt-5 pb-5 justify-content-center mt-5 pt-5">
+            <div data-aos="slide-up" id="team-members" class="row mt-5 pb-5 justify-content-center mt-5 pt-5">
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail" src="images/boy-casual-cool-769772.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail" src="images/boy-casual-cool-769772.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">John Smith</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -137,7 +141,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/adult-attractive-beard-247885.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/adult-attractive-beard-247885.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -151,7 +155,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card  text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/beautiful-blur-blurred-background-733872.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/beautiful-blur-blurred-background-733872.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -165,7 +169,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/adult-beautiful-beauty-787942.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/adult-beautiful-beauty-787942.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -179,7 +183,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-1.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-1.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -193,7 +197,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -207,7 +211,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-4.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-4.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -221,7 +225,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -247,7 +251,7 @@
 
             <div id="collapseExample" class="row mt-5 pb-5 collapse">
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail" src="images/i-1.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail" src="images/i-1.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">John Smith</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -261,7 +265,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -275,7 +279,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card  text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-4.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-4.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -289,7 +293,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -303,7 +307,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-1.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-1.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -317,7 +321,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -331,7 +335,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-4.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-4.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -345,7 +349,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 card text-center">
-                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image cap">
+                    <img class="img-team-member img-thumbnail rounded-circle" src="images/i-3.jpg" alt="Card image">
                     <div class="card-inner">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting.</p>
@@ -374,7 +378,7 @@
                 </div>
             </div>
             <div class="row mt-5 pt-5">
-                <div id="work-intro" class="col-lg-6">
+                <div data-aos="flip-left"  id="work-intro" class="col-lg-6">
                     <div class="card-body p-0">
                         <h1 class="card-title font-weight-bold header-text pb-4">Was wir wie für Sie tun?</h1>
                         <p class="card-text body-text">
@@ -387,8 +391,8 @@
                         </p>
                     </div>
                 </div>
-                <div id="work-img" class="col-lg-6">
-                    <img class="img-fluid" src="images/shutterstock_1102247705.jpg" alt="">
+                <div data-aos="flip-right" id="work-img" class="col-lg-6">
+                    <img class="img-fluid" src="images/shutterstock_1102247705.jpg" alt="Error: image is not loade">
                 </div>
             </div>
         </div>
@@ -404,7 +408,7 @@
                 </div>
             </div>
             <div class="row mb-5 justify-content-center mt-5 pt-5">
-                <div class="card col-md-5 col-lg-4 mt-2 border-0 bg-transparent">
+                <div data-aos="flip-right" class="card col-md-5 col-lg-4 mt-2 border-0 bg-transparent">
                     <div class="card-body text-center bg-dark text-light">
                         <div class="card-top">
                             <h4 class="card-title">Präsentationen</h4>
@@ -421,7 +425,7 @@
                     </div>
                 </div>
 
-                <div class="card col-md-5 col-lg-4 mt-2 border-0 bg-transparent">
+                <div data-aos="flip-right" class="card col-md-5 col-lg-4 mt-2 border-0 bg-transparent">
                     <div class="card-body text-center bg-dark text-light">
                         <div class="card-top">
                             <h4 class="card-title">Klassik</h4>
@@ -441,15 +445,15 @@
                     </div>
                 </div>
 
-                <div class="card col-md-5 col-lg-4 mt-2 border-0 bg-transparent">
-                    <div class="card-body text-center bg-dark text-light">
+                <div data-aos="flip-right" class="card col-md-5 col-lg-4 mt-2 border-0 bg-transparent">
+                    <div id="web" class="card-body text-center bg-dark text-light">
                         <div class="card-top">
                             <h4 class="card-title">Web</h4>
                         </div>
 
                         <p class="card-text">
                             <ul class="list-unstyled service-list">
-                                <li>Entwicklung von cloudbasierten Webservices & APIs zur</li>
+                                <li>Entwicklung von cloudbasierten Webservices &amp; APIs zur</li>
                                 <li>Datenverarbeitung für Videoanwendungen</li>
                                 <li>Webseitenentwicklung und Gestaltung</li>
                                 <li>3D Animation</li>
@@ -459,7 +463,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card col-md-5 col-lg-4 mt-2 border-0 mt-lg-4 bg-transparent">
+                <div data-aos="flip-right" class="card col-md-5 col-lg-4 mt-2 border-0 mt-lg-4 bg-transparent">
                     <div class="card-body text-center bg-dark text-light">
                         <div class="card-top">
                             <h4 class="card-title">Film</h4>
@@ -468,8 +472,8 @@
                             <ul class="list-unstyled service-list">
                                 <li>Storytelling, das komplexe Themen spannend, mediengerecht und aufmerksamkeitsstark erzählt</li>
                                 <li>Drehs durch In-House Film Teams in Europa und mit Netzwerken weltweit</li>
-                                <li>2D & 3D Animation</li>
-                                <li>360° Video & AR – Apps</li>
+                                <li>2D &amp; 3D Animation</li>
+                                <li>360° Video &amp; AR – Apps</li>
                                 <li>Sprachaufnahmen / Voiceover</li>
                                 <li>Editing, Musikauswahl, Tonnachbearbeitung</li>
                                 <li>Digital Signage</li>
@@ -490,11 +494,11 @@
             <div class="row ">
                 <div class="col-12 p-0 text-center">
                     <div id="carouselExampleIndicators" class="carousel slide  pt-5" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                  </ol>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
                         <div class="carousel-inner">
                             <div class="row justify-content-center">
                                 <div class="col-md-5 p-0 carousel-item active ">
@@ -502,14 +506,11 @@
                                         <h1 class="card-title">
                                             <i class="fas fa-quote-left"></i>
                                         </h1>
-                                        <h5 class="card-title">TESTIMONIALS</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                                            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                                            sea takimata
+                                        <h4 class="card-title mb-4"> Quotes</h4>
+                                        <p class="card-text">Creativity is contagious, pass it on
                                         </p>
-                                        <p class="card-text pt-3 pb-3">
-                                            gbetbetbebbbgr
+                                        <p class="card-text pt-3 pb-3 font-weight-bold text-secondary">
+                                            Albert Einstein
                                         </p>
                                     </div>
                                 </div>
@@ -518,15 +519,13 @@
                                         <h1 class="card-title">
                                             <i class="fas fa-quote-left"></i>
                                         </h1>
-                                        <h5 class="card-title">TESTIMONIALS</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                                            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                                            sea takimata
+                                        <h4 class="card-title mb-4"> Quotes</h4>
+                                        <p class="card-text">Charles Mingus Quotes. Making the simple complicated is commonplace; making the complicated
+                                            simple, awesomely simple, that's creativity.
                                         </p>
-                                        <p class="card-text pt-3 pb-3  ">
-                                                gbetbetbebbbgr
-                                            </p>
+                                        <p class="card-text pt-3 pb-3 font-weight-bold text-secondary">
+                                            Charles Mingus
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-5 p-0 carousel-item ">
@@ -534,15 +533,13 @@
                                         <h1 class="card-title">
                                             <i class="fas fa-quote-left"></i>
                                         </h1>
-                                        <h5 class="card-title">TESTIMONIALS</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                                            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                                            sea takimata
+                                        <h4 class="card-title mb-4">Quotes</h4>
+                                        <p class="card-text">Curiosity about life in all of its aspects, I think, is still the secret of great
+                                            creative people
                                         </p>
-                                        <p class="card-text pt-3 pb-3 ">
-                                                gbetbetbebbbgr
-                                            </p>
+                                        <p class="card-text pt-3 pb-3 font-weight-bold text-secondary">
+                                            Leo Burnett
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -571,12 +568,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div data-aos="slide-up" class="col-md-6">
                     <div id="googleMap" class="google-maps"></div>
                 </div>
-                <div id="contact" class="col-md-6 text-md-right contact-info">
+                <div data-aos="zoom-out-right" id="contact" class="col-md-6 text-md-right contact-info">
                     <div class="card-body pt-md-0">
-                        <img class="img-fluid" src="images/blomqvist_Logo_RGB.png" alt="">
+                        <img class="img-fluid" src="images/blomqvist_Logo_RGB.png" alt="Error: image is not loade">
                         <p class="card-text">
                             <ul class="list-unstyled contact-list">
                                 <li>
@@ -649,6 +646,10 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG20xCXAAHYJW682lNspweRMsSlnoU_vU">
     </script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="node_modules/bootstrap/dist/js/custom-animation.js"></script>
     <script src="node_modules/bootstrap/dist/js/app.js"></script>
 </body>
